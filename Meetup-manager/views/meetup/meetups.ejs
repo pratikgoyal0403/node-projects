@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <title>Meetups</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs')%>
+    <main class="meetups">
+        <% if(meetups.length > 0){%>
+            <% meetups.map(meetup => { %>
+                <article class="meetup">
+                    <div class="image">
+                        <img src="/<%= meetup.imageUrl %>" alt="meetup image">
+                    </div>
+                    <div class="info-container">
+                        <div class="info">
+                            <h2 class="meetup-heading"><%= meetup.title%></h2>
+                            <p class="date-time"><%= meetup.date%><%= meetup.time%></p>
+                        </div>
+                        <div class="more-info">
+                            <a href="/meetups/<%= meetup._id %>">
+                                <i class="fa fa-arrow-right"></i>
+                                more    
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            <% }) %>
+        <% }%>
+    </main>
+</body>
+</html>

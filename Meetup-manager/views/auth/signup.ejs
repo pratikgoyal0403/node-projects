@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs')%>
+    <main>
+        <form action="/signup" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Mail">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit" class="btn">Signup</button>
+        </form>
+    </main>
+</body>
+</html>

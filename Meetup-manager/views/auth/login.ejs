@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs')%>
+    <main>
+        <% if(errorMsg){ %>
+            <h1 class="error"><%= errorMsg %></h1>
+        <% }%>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Mail">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit" class="btn">login</button>
+        </form>
+    </main>
+</body>
+</html>

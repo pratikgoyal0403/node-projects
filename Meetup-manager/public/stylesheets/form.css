@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 70vw;
+    margin: auto;
+    min-height: 92vh;
+    max-height: 90vh;
+    padding: 30px;
+
+}
+main h1{
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    text-transform: capitalize;
+    font-weight: 550;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+form input, textarea{
+    width: 80%;
+    padding: 5px;
+    margin: 10px auto;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: .5px .5px 5px grey;
+    background-color: rgb(255, 51, 0);
+    color: white;
+}
+

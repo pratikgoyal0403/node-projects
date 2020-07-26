@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 100vw;
+    min-height: 92vh;
+    max-height: 90vh;
+    padding: 3rem;
+}
+.personalInfo{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.personalInfo img{
+    width: 20rem;
+    height: 20rem;
+    /* object-fit: contain; */
+    border-radius: 50%;
+}
+.personalInfo h4{
+    margin-top: 20px;
+    font-size: 26px;
+    width: 50%;
+    text-align: center;
+
+}

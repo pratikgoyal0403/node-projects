@@ -1,0 +1,50 @@
+.header{
+    width: 100vw;
+    min-height: 8vh;
+    max-height: 10vh;
+    background-color: rgb(236, 78, 21);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+nav a{
+    text-decoration: none;
+}
+nav h2{
+    color: white;
+    letter-spacing: .5rem;
+    font-size: 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+}
+.navigation li{
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation li i{
+    margin-right: 5px;
+    font-size: 16px;
+    color: white;
+}
+.navigation li a{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+}
+.corusel{
+    margin-top: 30px;
+}
+.corusel h1{
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+}

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>editor</title>
+    </head>
+    <body>
+        <div class="imageContainer">
+            <img src="<%- imageUrl%>" alt="uploaded image">
+        </div>
+        <form action="/format" method="POST" >
+            <input type="number" name="width" placeholder="width in %...">
+            <input type="number" name="height" placeholder="height in %...">
+            <input type="number" name="quality" placeholder="quality in %..." max="100" min="0">
+            <input type="hidden" name="imageUrl" value="<%- imageUrl%>">
+            <button type="submit">generate Image</button>
+        </form>
+    </body>
+</html>
