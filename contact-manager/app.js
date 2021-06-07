@@ -6,7 +6,7 @@ const authRoute = require('./Routes/auth');
 
 const app =  express();
 
-const URI = 'mongodb+srv://pratik:pratikgoyal@cluster0-mlvox.mongodb.net/contact-manager-api';
+const URI = //db uri
 
 app.use(cors());
 app.use(express.json());
