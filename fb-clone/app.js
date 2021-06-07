@@ -11,7 +11,7 @@ const authRoute = require('./routes/auth');
 const app = express();
 
 const PORT = process.env.PORT || 5050;
-const URI = "mongodb+srv://pratik:pratikgoyal@cluster0-mlvox.mongodb.net/fb-clone"
+const URI = //mongodb cloud database link can't upload on github
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=>{
