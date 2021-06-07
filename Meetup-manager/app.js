@@ -16,7 +16,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5050;
 const URI =
-  "mongodb+srv://pratik:pratikgoyal@cluster0-mlvox.mongodb.net/devMeetups";
+  //db uri
 
 const store = new mongoDbStore({
   uri: URI,
